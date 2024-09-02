@@ -1,0 +1,65 @@
+body, html{
+    width: 100%;
+    background-color: #fff1d7;
+    padding: 15px;
+}
+
+*{
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Courier, monospace;
+}
+
+h1{
+    font-size: 40px;
+    color: rgb(104, 12, 87);
+}
+.galeriaPerson{
+    width: 400px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.personBox{
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 60px;
+    border: #fff1d7;
+    background-color: #fff1d7;
+}
+
+.personBox img{
+    width: 100px;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+#warrior img{
+    width: 135px;
+}
+.atrib{
+    display: none;
+}
+
+.gameBar{
+    display: none;
+    transition: ease-in 0.5s;
+}
+
+#btnStart{
+    width: 150px;
+    height: 50px;
+    border: solid 3px black;
+    background-color: rgb(104, 12, 87);
+    font-size: 20px;
+    color: white;
+}
+
+#charTxt{
+    width: 300px;
+    margin-top: 300px;
+}
+
+.tittle{
+    margin-bottom: -10px;
+}

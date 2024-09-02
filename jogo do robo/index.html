@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gameMenu">
+        <h1 id="tittle">Solucione o assassinato</h1>
+        <h3>Sinopse</h3>
+        <p>Você é um investigador enviado pelo rei para solucionar um assassinato de um Bispo <br>em uma cidade próxima.
+            Chegando lá, você recolhe alguns depoimentos e começa a investigar o caso.
+
+        </p>
+        <h3>Cena do crime:</h3> <p>A Casa do Bispo (ao lado da igreja)</p>
+        <h3>Condição da vítima:</h3>
+        <p>O corpo foi encontrado sem vida deitado em sua cama.<br> O cadáver não tinha marcas de agressão, escoriações e nem sangue em nenhum local.<br>Mas apresentava baixa temperatura corporal e pele pálida.</p>
+        <h3>Suspeitos:</h3>
+        <p>Nessa investigação você terá que colher informações dos seguintes personagens:<br><br>
+            <strong>- O Padre da igreja <br></strong>
+            <strong>- Um simples Camponês <br>
+            <strong>- O Mestre da Guilda <br>
+            <strong>- O Comerciante <br>
+            <strong>- O Guerreiro <br>
+            <strong>- E o Padeiro <br>
+        </p>
+
+        <button id="btnStart" onclick="showGameBar()">Iniciar Jogo</button>
+    </div>
+    
+    <section class="scene">
+        <div class="loadMap">
+            <img class="igreja" src="" alt="">
+            <img class="guilda" src="" alt="">
+            <img class="cidade" src="" alt="">
+            <img class="campo" src="" alt="">
+            <img class="cadeia" src="" alt="">
+        </div>
+
+        <div class="crimeScene">
+            <img class="deadbody" id="padreDB" alt="">
+            <img class="deadbody" id="camponesDB" src="" alt="">
+            <img class="deadbody" id="bispoDB" src="" alt="">
+            <img class="deadbody" id="guildDB" src="" alt="">
+            <img class="deadbody" id="banditDB" src="" alt="">
+            <img class="deadbody" id="warriorDB" src="" alt="">
+            <img class="deadbody" id="padeiroDB" src="" alt="">
+        </div>
+    </section>
+    
+    <section class="gameBar">
+        <div><h1 class="tittle">Quem é o culpado?</h1><p>passe o mouse sobre os personagens para entender o que aconteceu</p></div>
+        <div class="galeriaPerson">
+            <button class="personBox" id="padre" onclick="onPadre()" onmouseover="showGaleriaPerson()"><img src="export/personagens/padre.png" alt="">Padre</button>
+            <button class="personBox" id="campones" onclick="onCampones()"><img src="export/personagens/campones.png" alt="">Camponês</button>
+            <button class="personBox" id="guildMaster" onclick="onGuildMaster()"><img src="export/personagens/guilda.png" alt="">Mestre da Guilda</button>
+            <button class="personBox" id="merchant" onclick="onMerchant()"><img src="export/personagens/mercador.png" alt="">Comerciante</button>
+            <button class="personBox" id="warrior" onclick="onWarrior()"><img src="export/personagens/guerreiro.png" alt="">Guerreiro</button>
+            <button class="personBox" id="padeiro" onclick="onPadeiro()"><img src="export/personagens/padeiro.png" alt="">Padeiro</button>
+        </div>
+        <!-- <h1 class="solution">Seu veredito:</h1> -->
+        <p class="alertSolution"></p>
+       
+    </section>
+    <p id="charTxt"></p>
+  
+    
+    <div class="atrib">
+        <h2>Atributos</h2>
+        <p id="forca">Força:</p>
+        <p id="intel">Inteligência:</p>
+        <p id="spd">Velocidade:</p>
+        <p id="end">Resistência:</p>
+        <p id="bonusTrait">Habilidade especial:</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
